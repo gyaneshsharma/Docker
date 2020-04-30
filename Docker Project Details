@@ -46,6 +46,8 @@ services:
 
   drupal:
     image: drupal:8-apache
+    depends_on:
+      - dbos2
     ports:
       - 8756:80
     volumes:
